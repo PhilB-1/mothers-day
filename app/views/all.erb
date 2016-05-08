@@ -1,0 +1,9 @@
+<h1>To-Do List</h1>
+<ol>
+  <% @tasks.each do |task| %>
+    <%= erb :_task, layout: false, locals: {var: task} %>
+
+  <% end %>
+</ol>
+
+<a href="/tasks/new">Create a New Task</a>
