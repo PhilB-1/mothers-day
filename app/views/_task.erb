@@ -1,8 +1,0 @@
-<li id="<%= var.id %>">
-  <%= var.content %>
-  <form id="delete" action="/tasks" method="post">
-    <input type="hidden" name="_method" value="delete">
-    <input type="hidden" name="id" value="<%= var.id %>">
-    <input type="submit" value="Delete">
-  </form>
-</li>
